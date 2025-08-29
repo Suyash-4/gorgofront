@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
 
 const Agence = () => {
   return (
-    <div>Agence</div>
-  )
-}
+    <>
+      <div className="">
+        <div>
+          
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default Agence
+export default Agence;

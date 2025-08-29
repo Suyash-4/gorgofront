@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "Quintessa300";
-  src: url(../public/fonts/Lausanne-300.woff2);
+  src: url(/fonts/Lausanne-300.woff2);
 }
 @font-face {
   font-family: "Quintessa500";
-  src: url(../public/fonts/Lausanne-500.woff2);
+  src: url(/fonts/Lausanne-500.woff2);
 }
 
 * {
@@ -17,4 +17,10 @@ body,
 html {
   /* background: #000; */
   /* font-family: monospace; */
+
+}
+
+::selection{
+  background:#b9fc02;
+  color:#000;
 }
