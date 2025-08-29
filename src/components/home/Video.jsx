@@ -9,6 +9,7 @@ const Video = () => {
           autoPlay
           loop
           muted
+          playsInline
           className="h-full w-full object-cover"
         ></video>
       </div>
