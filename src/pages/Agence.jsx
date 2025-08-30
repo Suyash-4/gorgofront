@@ -36,8 +36,8 @@ const Agence = () => {
         scrub: true,
         pin: true,
         onUpdate: (elem) => {
-          console.log(Math.floor(elem.progress));
-          
+          const imgIndex = Math.floor(elem.progress * (imgArr.length - 1) );
+          imgRef.current.src = imgArr[imgIndex];
         },
       },
     });
@@ -45,11 +45,14 @@ const Agence = () => {
   return (
     <>
       <div className="section-1 h-screen">
-        <div className=" h-[20vw] w-[15vw] rounded-4xl overflow-hidden absolute top-50 left-[30vw]">
+        <div
+          ref={imgDivRef}
+          className="h-[20vw] w-[15vw] rounded-4xl overflow-hidden absolute top-50 left-[30vw]"
+        >
           <img
             ref={imgRef}
             src="https://k72.ca/uploads/teamMembers/Carl_480x640-480x640.jpg"
-            alt="Carl"
+            alt="&nbsp;"
             className="h-full w-full object-cover"
           />
         </div>
