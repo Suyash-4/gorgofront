@@ -3,11 +3,15 @@ import { Link, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Agence from "./pages/Agence";
 import Projects from "./pages/Projects";
+import Navbar from "./components/navbar/Navbar";
 
 const App = () => {
   return (
     <>
       <div>
+        <div className="">
+          <Navbar />
+        </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/agence" element={<Agence />} />
