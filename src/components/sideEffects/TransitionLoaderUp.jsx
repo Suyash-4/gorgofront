@@ -16,7 +16,7 @@ const TransitionLoaderUp = ({ children }) => {
     gsap.set(loaderBars.current, { autoAlpha: 1 });
     gsap.set(".stair", { y: 0, height: "100%" });
 
-    // Animate stairs in
+    // Animate stairs in 
     tl.from(".stair", {
       height: "100%",
       duration: 0.5,

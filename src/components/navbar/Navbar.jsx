@@ -7,8 +7,8 @@ const Navbar = () => {
   const fullMenuRef = useRef(null);
   return (
     <>
-      <div className="fixed top-0 z-20 w-full flex items-start justify-between">
-        <div className="p-3 w-37">
+      <div className="fixed top-0 z-50 w-full flex items-start justify-between">
+        <div className="k722 p-3 w-37">
           <Link to="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -25,6 +25,7 @@ const Navbar = () => {
             </svg>
           </Link>
         </div>
+        {/* menu */}
         <div
           onMouseEnter={() => {
             greenBarRef.current.style.height = "100%";
@@ -35,12 +36,10 @@ const Navbar = () => {
           onClick={() => {}}
           className="h-14 w-[16vw] bg-black relative"
         >
-          <div className="h-full w-full"></div>
-
           {/* height for green bar initially 0, when hovered upon, it'll go 100% */}
           <div
             ref={greenBarRef}
-            className="absolute top-0 transition-all duration-100 bg-lime-300 h-0 w-full"
+            className="absolute top-0 z-20 transition-all duration-100 bg-lime-300 h-0 w-full"
           ></div>
         </div>
       </div>
