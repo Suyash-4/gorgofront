@@ -1,12 +1,24 @@
+/*eslint-disable */
 import React from "react";
 
 const Video = () => {
+  const video_links = [
+    "https://www.pexels.com/download/video/31974459/",
+    "https://www.pexels.com/download/video/4156092/",
+    "https://www.pexels.com/download/video/4377752/",
+    "https://www.pexels.com/download/video/4508069/",
+  ];
+  const random_link_pass = () => {
+    const randomIndex = Math.floor(Math.random() * video_links.length);
+    return video_links[randomIndex];
+  };
+
   return (
     <>
       <div className="h-full w-full">
         <video
           // src="public/video.mp4"
-          src="https://download-video-ak.vimeocdn.com/v3-1/playback/36bc59b8-6671-4358-abc2-15555fc6ae59/69496b2d?__token__=st=1759035734~exp=1759039334~acl=%2Fv3-1%2Fplayback%2F36bc59b8-6671-4358-abc2-15555fc6ae59%2F69496b2d%2A~hmac=c87e9b82fb56ce3d60a0fa0152fe493129cf1d51731fdf9f9deaebe3b85b8ff9&r=dXMtZWFzdDE%3D"
+          src={random_link_pass()}
           autoPlay
           loop
           muted
