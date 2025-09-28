@@ -36,14 +36,15 @@ html {
 .moveX {
   display: inline-flex;
   animation: moveAnimation 5s linear infinite;
-}
+} 
 
 @keyframes moveAnimation {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%); /* shift exactly one "set" width */
+  /* shift exactly one "set" width */
+    transform: translateX(-50%); 
   }
 }
 
